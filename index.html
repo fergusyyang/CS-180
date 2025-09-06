@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CS 180 Projects – Fergus Yang</title>
+  <style>
+    :root {
+      --bg: #f4f6fb;
+      --card: #ffffff;
+      --text: #1f2430;
+      --muted: #586174;
+      --accent: #2f6fed;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #eef2ff, #f7f9ff 30%, #f4f6fb 100%);
+    }
+    header {
+      padding: 48px 20px 20px;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 8px; font-size: 2rem; }
+    header p { margin: 0; color: var(--muted); }
+    .container {
+      max-width: 1000px;
+      margin: 24px auto 60px;
+      padding: 0 20px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,.06);
+      padding: 24px;
+    }
+    .list { display: grid; gap: 14px; margin: 8px 0 0; padding: 0; list-style: none; }
+    .item a {
+      display: block;
+      text-decoration: none;
+      color: var(--text);
+      padding: 16px 18px;
+      border: 1px solid #e7eaf3;
+      border-radius: 12px;
+      background: #fff;
+      transition: transform .08s ease, box-shadow .08s ease, border-color .2s;
+    }
+    .item a:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 14px rgba(0,0,0,.06);
+      border-color: #dfe6fb;
+    }
+    .item .title { font-weight: 600; }
+    .item .desc { margin-top: 4px; color: var(--muted); font-size: .95rem; }
+    footer { text-align: center; color: var(--muted); margin: 36px 0; font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CS 180 Projects</h1>
+    <p>Fergus Yang · UC Berkeley</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2 style="margin-top:0">Projects</h2>
+      <ul class="list">
+        <li class="item">
+          <a href="project0.html">
+            <div class="title">Project 0: Becoming Friends with Your Camera</div>
+            <div class="desc">Selfie composition, perspective compression, and a dolly zoom.</div>
+          </a>
+        </li>
+        <!-- Add future projects here as more links -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>CS 180 · Fall 2025</footer>
+</body>
+</html>
